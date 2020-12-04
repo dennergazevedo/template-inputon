@@ -18,9 +18,9 @@ Template requer [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com/get-
 É necessário instalar as dependências para rodar.
 
 ```sh
+$ npx create-react-app project-name --template dnr-inputon
 $ cd inputon
-$ yarn eslint --init (and configure)
-$ yarn
+$ yarn start
 ```
 
 ## License
