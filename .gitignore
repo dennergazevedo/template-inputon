@@ -1,7 +1,1 @@
-/node_modules
-
-# production
-/build
-
-# environ variable
-.env
+node_modules

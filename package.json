@@ -1,7 +1,16 @@
 {
-  "name": "inputon",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cra-template-inputon",
+  "version": "0.1.1",
+  "license": "MIT",
+  "author": "Denner Azevedo",
+  "main": "template.json",
+  "files": ["template", "template.json"],
+  "description": "Template InputOn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennergazevedo/template-inputon",
+    "directory": "/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,6 +25,9 @@
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
+  "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintrc",
+  "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc template/",
+  "prepublishOnly": "yarn clean-files && yarn copy-files",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
